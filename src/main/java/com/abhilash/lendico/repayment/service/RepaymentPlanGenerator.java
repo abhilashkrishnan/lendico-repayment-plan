@@ -3,7 +3,7 @@ package com.abhilash.lendico.repayment.service;
 import java.math.BigDecimal;
 
 /**
- * Repayment calculator
+ * Repayment plan calculator functions
  */
 public interface RepaymentPlanGenerator {
 

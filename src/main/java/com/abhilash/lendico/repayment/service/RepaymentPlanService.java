@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 /**
- * Repayment plan calculation service
+ * Repayment plan generator service
  */
 public interface RepaymentPlanService {
 
