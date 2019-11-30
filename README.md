@@ -1,4 +1,4 @@
-# Lendio Loan Repayment Plan Generator
+# Lendico Loan Repayment Plan Generator
 
 ```Loan repayment plan generator using Java 8 and Spring Boot.```
 
