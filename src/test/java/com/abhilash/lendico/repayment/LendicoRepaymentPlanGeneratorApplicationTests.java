@@ -36,11 +36,8 @@ class LendicoRepaymentPlanGeneratorApplicationTests {
 		request.setNominalRate(5.0);
 		request.setDuration(24);
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
-		try {
-			request.setStartDate(formatter.parse("2018-01-01T00:00:01Z"));
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
+		request.setStartDate(formatter.parse("2018-01-01T00:00:01Z"));
+
 		mockMvc.perform(post("/generate-plan")
 				.content(mapper.writeValueAsString(request))
 				.header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON))
