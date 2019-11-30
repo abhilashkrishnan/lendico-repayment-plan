@@ -37,7 +37,7 @@ class LendicoRepaymentPlanGeneratorApplicationTests {
 		request.setDuration(24);
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
 		try {
-			request.setStartDate(formatter.parse("2019-11-29T10:30:01Z"));
+			request.setStartDate(formatter.parse("2018-01-01T00:00:01Z"));
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
