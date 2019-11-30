@@ -35,3 +35,4 @@ Send JSON payload in the body of the HTTP POST request
 "startDate": "2018-01-01T00:00:01Z"
 }
 ```
+In addition to this Spring Boot Test Case is also provided.
