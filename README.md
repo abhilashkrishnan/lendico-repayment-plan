@@ -27,7 +27,8 @@ http://localhost:8080/generate-plan
 
 Send JSON payload in the body of the HTTP POST request
 
-```{
+```
+{
 "loanAmount": "5000",
 "nominalRate": "5.0",
 "duration": 24,
