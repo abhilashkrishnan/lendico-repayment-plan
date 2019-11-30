@@ -2,7 +2,7 @@
 
 ```Loan repayment plan generator using Java 8 and Spring Boot.```
 
-## Build the application
+## Running the application
 
 Build with Maven
 
@@ -12,7 +12,8 @@ Build with Maven
 
 Start the Spring Boot application
 
-```cd PROJECT_ROOT_DIR 
+```
+cd PROJECT_ROOT_DIR 
 java -jar target/lendico-repayment-plan-0.0.1-SNAPSHOT.jar 
 ```
 
@@ -20,7 +21,8 @@ java -jar target/lendico-repayment-plan-0.0.1-SNAPSHOT.jar
 
 Using REST Client, send a HTTP POST request
 
-```http://localhost:8080/generate-plan
+```
+http://localhost:8080/generate-plan
 ```
 
 Send JSON payload in the body of the HTTP POST request
