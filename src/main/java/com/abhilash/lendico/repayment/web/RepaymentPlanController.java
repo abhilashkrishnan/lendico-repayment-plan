@@ -30,7 +30,7 @@ public class RepaymentPlanController {
         Integer duration = request.getDuration();
 
         Date startDate = request.getStartDate();
-        LocalDateTime localStartDate = LocalDateTime.ofInstant(startDate.toInstant(), ZoneId.systemDefault());
+        LocalDateTime localStartDate = LocalDateTime.ofInstant(startDate.toInstant(), ZoneId.of("UTC+00:00"));
 
         RepaymentPlan plan = repaymentPlanService.generateRepaymentPlan(loanAmount, nominalRate, duration, localStartDate);
         return plan.getRepayments();
