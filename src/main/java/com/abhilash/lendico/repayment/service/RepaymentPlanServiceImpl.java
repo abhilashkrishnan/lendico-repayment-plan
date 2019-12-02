@@ -49,7 +49,8 @@ public class RepaymentPlanServiceImpl implements RepaymentPlanService {
 
         Repayment repayment = new Repayment();
 
-        LocalDateTime date = startDate.plusMonths(monthsAfterStart);
+
+        LocalDateTime date = startDate.plusMonths(monthsAfterStart).withHour(0).withMinute(0).withSecond(0);
         repayment.setDate(date);
 
         BigDecimal interest = repaymentPlanGenerator.calculateInterest(nominalRate, initialOutstandingPrincipal);
